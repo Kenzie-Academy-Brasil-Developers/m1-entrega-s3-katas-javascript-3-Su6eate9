@@ -1,123 +1,123 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
-function kata1(x) {
+function kata1() {
     // implemente o código do kata 1 aqui
     let n = []
 
-    for(let i = 1; i <= x; i++){
+    for(let i = 1; i <= 25; i++){
         n.push(i)
     }
     return n
 }
-console.log(kata1(25))
+console.log(kata1())
 
 
-function kata2(x) {
+function kata2() {
     // implemente o código do kata 2 aqui
     let n = []
 
-    for(let i = 25; i >= x; i--){
+    for(let i = 25; i >= 1; i--){
         n.push(i)
     }
     return n
 }
-console.log(kata2(1))
+console.log(kata2())
 
 
-function kata3(x) {
+function kata3() {
     // implemente o código do kata 3 aqui
     let n = []
 
-    for(let i = -1; i >= x; i--){
+    for(let i = -1; i >= -25; i--){
         n.push(i)
     }
     return n
 }
-console.log(kata3(-25))
+console.log(kata3())
 
-function kata4(x) {
+function kata4() {
     // implemente o código do kata 4 aqui
     let n = []
 
-    for(let i = -25; i <= x; i++){
+    for(let i = -25; i <= -1; i++){
         n.push(i)
     }
     return n
 }
-console.log(kata4(-1))
+console.log(kata4())
 
 
-function kata5(x) {
+function kata5() {
     // implemente o código do kata 5 aqui
     let n = []
 
-    for(let i = 25; i >= x; i--){
+    for(let i = 25; i >= -25; i--){
         if(i % 2 != 0){
             n.push(i)
         }
     }
     return n
 }
-console.log(kata5(-25))
+console.log(kata5())
 
 
-function kata6(x) {
+function kata6() {
     // implemente o código do kata 6 aqui
     let n = []
 
-    for(let i = 0; i <= x; i++){
+    for(let i = 0; i <= 100; i++){
         if(i % 3 === 0){
             n.push(i)
         }
     }
     return n
 }
-console.log(kata6(100))
+console.log(kata6())
 
 
-function kata7(x) {
+function kata7() {
     // implemente o código do kata 7 aqui
     let n = []
 
-    for(let i = 0; i <= x; i++){
+    for(let i = 0; i <= 100; i++){
         if(i % 7 === 0){
             n.push(i)
         }
     }
     return n
 }
-console.log(kata7(100))
+console.log(kata7())
 
 
-function kata8(x) {
+function kata8() {
     // implemente o código do kata 8 aqui
     let n = []
 
-    for(let i = 0; i <= x; i++){
+    for(let i = 100; i >= 0; i--){
         if(i % 3 === 0 && i % 7 === 0){
             n.push(i)
         }
     }
     return n
 }
-console.log(kata8(100))
+console.log(kata8())
 
 
-function kata9(x) {
+function kata9() {
     // implemente o código do kata 9 aqui
     let n = []
 
-    for(let i = 0; i <= x; i++){
+    for(let i = 0; i <= 100; i++){
         if(i % 5 === 0 && i % 2 !== 0){
             n.push(i)
         }
     }
     return n
 }
-console.log(kata9(100))
+console.log(kata9())
 
 
-function kata10(x) {
+function kata10() {
     // implemente o código do kata 10 aqui
     return sampleArray
 }
