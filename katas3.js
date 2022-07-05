@@ -65,7 +65,7 @@ function kata6() {
     // implemente o código do kata 6 aqui
     let n = []
 
-    for(let i = 0; i <= 100; i++){
+    for(let i = 3; i <= 100; i++){
         if(i % 3 === 0){
             n.push(i)
         }
@@ -79,7 +79,7 @@ function kata7() {
     // implemente o código do kata 7 aqui
     let n = []
 
-    for(let i = 0; i <= 100; i++){
+    for(let i = 7; i <= 100; i++){
         if(i % 7 === 0){
             n.push(i)
         }
@@ -94,7 +94,9 @@ function kata8() {
     let n = []
 
     for(let i = 100; i >= 0; i--){
-        if(i % 3 === 0 && i % 7 === 0){
+        if(i % 3 === 0){
+            n.push(i)
+        } else if(i % 7 === 0 ){
             n.push(i)
         }
     }
@@ -117,17 +119,21 @@ function kata9() {
 console.log(kata9())
 
 
-function kata10() {
+function kata10(x) {
     // implemente o código do kata 10 aqui
-    return sampleArray
+    let n = []
+
+    for(let i = 0; i < x.length; i++){
+        n.push(x[i])
+    }
+    return n
 }
-console.log(kata10())
+console.log(kata10(sampleArray))
 
 
 function kata11(x) {
     // implemente o código do kata 11 aqui
     let n = []
-    x = sampleArray
 
     for(let i = 0; i < x.length; i++){
         if(x[i] % 2 === 0){
@@ -137,13 +143,12 @@ function kata11(x) {
     }
     return n
 }
-console.log(kata11())
+console.log(kata11(sampleArray))
 
 
 function kata12(x) {
     // implemente o código do kata 12 aqui
     let n = []
-    x = sampleArray
 
     for(let i = 0; i < x.length; i++){
         if(x[i] % 2 !== 0){
@@ -153,13 +158,12 @@ function kata12(x) {
     }
     return n
 }
-console.log(kata12())
+console.log(kata12(sampleArray))
 
 
 function kata13(x) {
     // implemente o código do kata 13 aqui
     let n = []
-    x = sampleArray
 
     for(let i = 0; i < x.length; i++){
         if(x[i] % 8 === 0){
@@ -169,20 +173,19 @@ function kata13(x) {
     }
     return n
 }
-console.log(kata13())
+console.log(kata13(sampleArray))
 
 
-function kata14() {
+function kata14(x) {
     // implemente o código do kata 14 aqui
     let n = []
-    x = sampleArray
 
     for(let i = 0; i < x.length; i++){
         n.push(x[i] * x[i])
     }
     return n
 }
-console.log(kata14())
+console.log(kata14(sampleArray))
 
 
 function kata15(x) {
@@ -192,7 +195,7 @@ function kata15(x) {
     for(let i = 0; i <= x; i++){
         soma += x
     }
-    return soma
+    return soma/2
 }
 console.log(kata15(20))
 
@@ -212,20 +215,35 @@ console.log(kata16())
 
 function kata17(x) {
     // implemente o código do kata 17 aqui
-    x = sampleArray
-    let nMin = Math.min(...x)
-    return nMin
+    // let nMin = Math.min(...x)
+    // return nMin
+    //[469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+    let n = x[0]
+
+    for(let i = 0; i < x.length; i++){
+        if(x[i] <= n){
+            n = x[i]
+        }
+    }
+    return n
 }
-console.log(kata17())
+console.log(kata17(sampleArray))
 
 
 function kata18(x) {
     // implemente o código do kata 18 aqui
-    x = sampleArray
-    let nMax = Math.max(...x)
-    return nMax
+    // let nMax = Math.max(...x)
+    // return nMax
+    let n = x[0]
+
+    for(let i = 0; i < x.length; i++){
+        if(x[i] >= n){
+            n = x[i]
+        }
+    }
+    return n
 }
-console.log(kata18())
+console.log(kata18(sampleArray))
 
 
 /**
